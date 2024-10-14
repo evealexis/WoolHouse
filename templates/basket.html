@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+
+<div class="wrapper">
+    <div class="main">
+        <div class="basket">
+            <h1>Your Basket:</h1>
+            {% if items %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total Item Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in items %}
+                    <tr>
+                        <td><img src="../static/images/yarn/{{ item.product.name | replace(' ', '_') }}.jpg"
+                                alt="{{ item.product.name }}">
+                            <p>{{ item.product.name }}</p>
+                        </td>
+                        <td>
+                            <form action="{{ url_for('basket') }}" method="POST"
+                                onsubmit="return updatePrice(event, this);">
+                                <input type="hidden" name="product_id" value="{{ item.product.id }}">
+                                <input type="number" name="quantity" min="1" max="{{ item.product.stock }}"
+                                    value="{{ item.quantity }}" data-price="{{ item.product.price }}"
+                                    oninput="calculateTotalPrice(this)" required>
+                                <button type="submit" name="update-basket">Update</button>
+                            </form>
+                        </td>
+                        <td>{{ item.product.price }}</td>
+                        <td class="total-price">£{{ item.price }}</td>
+                        <td>
+                            <form action="{{ url_for('basket') }}" method="POST">
+                                <input type="hidden" name="product_id" value="{{ item.product.id }}">
+                                <button type="submit" name="delete-from-basket">Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <h3>Total: <span id="grand-total">£{{ total }}</span></h3>
+            {% else%}
+            <p>Your basket is empty</p>
+            {% endif %}
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

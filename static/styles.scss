@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
+$nav-text: white;
+
+body{
+    background-image: url("../static/images/bground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    background-color: #dfdfdf;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.icons{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    img{
+        width: 7%;
+        height: 50px;
+        padding: 5px;
+    }
+}
+
+
+.col{
+    width: 25%;
+}
+
+.header img{
+    height: 120px;
+}
+
+.searchInput{
+    height: 50px;
+    width: 290px;
+    font-size: 18px;
+}
+
+.header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    max-height: 150px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.nav-header{
+    background-color: #577590;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    ul {
+        list-style-type: none;
+        color: $nav-text;
+        margin-bottom: 0;
+        li{
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+
+    a{
+        color: $nav-text;
+        text-decoration: none;
+    }
+}
+
+.headerIcon{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    img{
+        margin-bottom: 5px;
+        height: 30px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    font-size: 13px;
+}
+
+.input-icon{
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    border-left: 0;
+    i{
+        padding: 17px;
+    }
+}
+
+.statement{
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+
+.main{
+    display: flex;
+    background-color: white;
+    width: 65%;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding-bottom: 20px;
+    flex-direction: column;
+    p{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.my-5 {
+    margin-top: 0!important;
+    margin-bottom: 3rem!important;
+}
+
+.main-grid-container {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: auto;
+    grid-row: auto;
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card{
+    text-align: center;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 40%;
+        align-self: center;
+        padding: 0 0 5px 0;
+    }
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-grid{
+    display: grid;
+    background-color: wheat;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    height: 200px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.carousel-item{
+    width: 100%;
+    img{
+        width: 170px;
+        height: 170px;
+        justify-self: center;
+        align-self: center;
+        border-radius: 50%;
+    }
+    
+}
+
+.main-heading{
+    h1{
+        font-family: "Just Another Hand", cursive;
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+.col-small{
+    width: 12.5%;
+}
+
+.col-icons{
+    width: 7%;
+}
+
+.first-carousel{
+    height: 400px;
+    width: 100%;
+    .carousel-inner{
+        height: 400px;
+    }
+    img{
+        border-radius: 0;
+        height: 400px;
+    }
+}
+
+.content_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; 
+    margin: 10px;
+}
+
+.chatbox{
+    position: relative;
+    height: 80%;
+    width: 50%;
+    border: 3px grey solid;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.form{
+    position: absolute;
+    bottom: 0;
+    border-top: 3px black solid;
+    width: 100%;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    input{
+        width: 70%;
+    }
+}
+
+.usr-messages ul{
+    list-style-type: none;
+    background-color: lightgreen;
+    margin: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 280px;
+}
+
+.random-message{
+    background-color: lightskyblue;
+    margin: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 280px;
+}
+
+
+#about{
+    margin: 0 auto;
+    border: 1px black solid;
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+    h2{
+        color: #577590;
+    }
+}
+
+
+.my-5 {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+}
+
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 1rem!important;
+}
+
+.basket{
+    text-align: center;
+    width: 100%;
+}
+
+td {
+    width: 20%;
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+table{
+    flex-direction: column;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .searchInput{
+        display: none;
+        }
+
+        .input-icon {
+            display: none;
+        }
+        .headerIcon{
+            display: none;
+        }
+
+    .icons img{
+        width: 18%;
+        height: 50px;
+        padding: 5px;
+    }
+    .main{
+        width: 95%;
+    }
+
+    .chatbox{
+        width: 80%;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    .searchInput{
+        display: none;
+        }
+
+        .input-icon {
+            display: none;
+        }
+
+    .main{
+        width: 95%;
+    }
+    .chatbox{
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .main{
+        max-width: 700px;
+    }
+}

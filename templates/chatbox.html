@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="wrapper">
+    <div class="main">
+        <div class="content_container">
+            <div class="chatbox">
+                <!--  Show welcome message  -->
+                <p>{{ waiting }}</p>
+                <!-- Show all user messages -->
+                <div class="usr-messages">
+                    <ul>
+                        {% for message in userMsgs %}
+                        <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <!-- Random messages -->
+                <div class="random-message">
+                    <p>{{ randomMessage }}</p>
+                </div>
+                <!-- Submit form -->
+                <div class="form">
+                    <form action="/chatbox" method="POST">
+                        <input type="text" name="message"><button type="submit">Send</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

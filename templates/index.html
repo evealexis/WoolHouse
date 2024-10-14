@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+
+<div class="wrapper">
+	<div class="main">
+
+		<!-- FIRST CAROUSEL START -->
+		<div class="first-carousel">
+			<div id="carouselExampleIndicators" class="carousel slide">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+						class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="../static/images/carousel_new/balls_yarn_pink.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="../static/images/carousel_new/job_lot.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="../static/images/carousel_new/drops_alpaca.png" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+		<!-- CAROUSEL END -->
+		<br>
+		<div id="about">
+			<h2>About WoolHouse</h2>
+			<p>Wlecome to WoolHouse - The Home for everything Crochet! We stock all different types of wool such as
+				Double Knit(DK), Aran and more.</p>
+			<p>With WoolHouse you'll recieve <strong>FREE Delivery</strong> on <strong>All Orders.</strong></p>
+		</div>
+		<br>
+
+
+		<div class="main-heading">
+			<h1>Our most popular items..</h1>
+		</div>
+
+		<!-- CAROUSEL START -->
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="carousel-grid">
+						<img src="../static/images/carousel/crochet_hat_pattern.webp" class="d-block" alt="...">
+						<img src="../static/images/carousel/balls_yarn_blue.jpg" class="d-block" alt="...">
+						<img src="../static/images/carousel/crochet_kit.jpg" class="d-block" alt="...">
+						<img src="../static/images/carousel/crochet_pattern.avif" class="d-block" alt="...">
+					</div>
+
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-grid">
+						<img src="../static/images/carousel/crochet_pattern2.avif" class="d-block" alt="...">
+						<img src="../static/images/carousel/balls_yarn_chunky.jfif" class="d-block" alt="...">
+						<img src="../static/images/carousel/ball_yarn.jpg" class="d-block" alt="...">
+						<img src="../static/images/carousel/crochet_hooks.jfif" class="d-block" alt="...">
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<!-- CAROUSEL END -->
+	</div>
+	{% endblock %}
+
+</div>
