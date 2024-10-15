@@ -20,10 +20,10 @@ db = SQLAlchemy(app)
 
 
 # List of messages
-messagesList = ["Hello! My name is ChatBot, please type your query below",
+messagesList = ["Hello! My name is ChatBot, please type your query below.",
             "Welcome back! As a treat, how about a 20% dicount? Use: FREESTUFF10 on your next order 😊",
             "Today is your lucky day! Use CODE50 on your next order for a 10% discount",
-            "Thank you for your message, someone will be with your shortly"]
+            "Thank you for your message, someone will be with you shortly."]
 
 
 
