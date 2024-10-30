@@ -5,5 +5,5 @@
 - Flask
 - SQLite
 - Javascript
-- SASS
+- SASS/SCSS
 - HTML5/ CSS3
