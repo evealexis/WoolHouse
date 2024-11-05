@@ -1,9 +1,7 @@
-## WoolHouse
-
 # <a href="https://eea96.pythonanywhere.com/">WoolHouse</a>
 
 ## Description:
-- My first full-stack e-commerce which combines both of my passions - crochet and programming.
+- My first full-stack e-commerce, built within a week which combines both of my passions - crochet and programming.
 - Has a chatbox feature which displays a random message after you send a message.
 - Generates a unique session ID and tracks each user's added products and basket in a SQLite database.
 - Each table relationship is established through foreign keys
